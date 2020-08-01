@@ -1,6 +1,5 @@
 pip install wheel
 pip install pipwin
-
 pip install numpy
 pip install pandas
 pip install shapely
@@ -8,9 +7,10 @@ pip install GDAL-3.1.2-cp38-cp38-win32.whl
 pip install gdal
 pip install Fiona-1.8.13-cp38-cp38-win32.whl
 pip install fiona
+pip install Rtree-0.9.4-cp38-cp38-win32.whl
+pip install rtree
 pip install pyproj
 pip install six
-
 pip install geopandas
 pip install descartes
 pip install mapclassify

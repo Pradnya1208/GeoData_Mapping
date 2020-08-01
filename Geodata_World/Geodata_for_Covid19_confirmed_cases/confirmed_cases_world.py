@@ -52,7 +52,7 @@ lenth = len(merge.columns.to_list())
 for dates in merge.columns.to_list()[2:lenth]:
 
     ax = merge.plot(column = dates,
-                    cmap = 'pink',
+                    cmap = 'pink', #OrRd
                     figsize = (14,14),
                     legend = True,
                     scheme ='user_defined',
@@ -61,7 +61,7 @@ for dates in merge.columns.to_list()[2:lenth]:
                     linewidth = 0.4)
 
     ax.set_title("Total confirmed Covid19 Cases Worldover : " + dates,
-             fontdict = {'fontsize': 20}, pad = 12, color = 'white')
+             fontdict = {'fontsize': 20}, pad = 12, color = 'white') 
     ax.set_axis_off()
 
 
