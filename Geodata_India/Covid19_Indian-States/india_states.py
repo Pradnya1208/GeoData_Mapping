@@ -64,7 +64,7 @@ for state in state_name:
                     covidRec.append("0,")
                     covidDeath.append("0,")
                 i = index
-                    
+            # TODO : Data cleaning for Missing values                
                 
             
             for t in conf.keys():
