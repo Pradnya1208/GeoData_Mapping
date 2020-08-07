@@ -42,16 +42,7 @@ for state in state_name:
         covidRec.append(state + ",")
         covidDeath.append('\n')
         covidDeath.append(state + ",")
-        covid = df(req.json()[state])
-
-        
-            
-        # if  len(covid.index) != len(dtcolNames):
-        #      nullVal = (len(dtcolNames)) - len(covid.index)
-        #      #print(nullVal)
-        #      for x in range (nullVal):    
-        #          covidData.append("0,")
-         
+        covid = df(req.json()[state])     
                 
         for conf, dt in zip(covid.dates, covid.index):
             dt = dt + ","
@@ -84,7 +75,7 @@ for state in state_name:
                     if not 'deceased' in (conf['total'].keys()):
                         covidDeath.append("0,")
               
-                   
+     # TODO :check last date value of state and Compare it with ideal last value               
 # TODO: Delta and no of tests
                                 
 
