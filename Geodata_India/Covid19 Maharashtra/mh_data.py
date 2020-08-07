@@ -73,7 +73,7 @@ for dist  in dist_name:
                     if 'confirmed' in (conf['total'].keys()):
                         covidData.append(str(conf['total']['confirmed']) + ",")
                     if not 'confirmed' in (conf['total'].keys()):
-                        covidRec.append("0,")
+                        covidData.append("0,")
                         
                     if 'recovered' in (conf['total'].keys()):
                         covidRec.append(str(conf['total']['recovered']) + ",")
