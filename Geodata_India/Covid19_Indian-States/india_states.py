@@ -6,16 +6,13 @@ from pandas import DataFrame as df
 
 JSON_URL = 'https://api.covid19india.org/v5/min/timeseries.min.json'
 
-
 state_name  = []
-
 dtcolNames =[]
 covidData =[]
 covidRec = []
 covidDeath = []
 dateCol =[]
-keys = [] 
-#df = pd.read_json(JSON_URL)
+
 req = requests.get(JSON_URL)
 
 
@@ -23,7 +20,7 @@ stateNames = df(req.json())
 statesData = stateNames.T
 
 # TODO : compare with QGIS names
-#TT for India
+# (Statecode)TT for India
 for st in statesData.index:
      state_name.append(st)
 
