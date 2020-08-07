@@ -17,6 +17,7 @@ dtcolNames =[]
 req = requests.get(JSON_URL)
 req_India = requests.get(JSON_INDIA)
 
+# TODO List for State codes and iterate on it in single class
 
 distNames = df(req.json()['MH']['districts'])
 distNames = distNames.T
